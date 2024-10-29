@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Кеңесов Нұржан</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f2f5;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Общий контейнер */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Логотип */
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 60px;
+        }
+
+        /* Заголовок */
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .profile-info {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Стиль профиля */
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Анимация появления */
+        .about, .projects {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .about.visible, .projects.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Раздел "О себе" */
+        .about {
+            margin: 40px 0;
+            padding: 20px;
+            background: #f9fafb;
+            border-left: 5px solid #3498db;
+            text-align: left;
+        }
+
+        /* Проекты */
+        .projects h2 {
+            font-size: 2em;
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .project-item {
+            padding: 20px;
+            margin: 10px 0;
+            background: #e9eef2;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .project-item:hover {
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .project-item h3 {
+            font-size: 1.5em;
+            color: #3498db;
+        }
+
+        .project-item p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Иконка Инстаграма */
+        .social {
+            margin-top: 20px;
+        }
+
+        .social a img {
+            width: 30px;
+            transition: transform 0.3s;
+        }
+
+        .social a img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Логотип КазНПУ -->
+    <img src="https://i.postimg.cc/5yngpTPR/20241029-162222.png" alt="Логотип КазНПУ" class="logo">
+    
+    <div class="container">
+        <!-- Профиль -->
+        <div class="profile">
+            <img src="https://i.postimg.cc/T1rgTqkG/IMG-20241029-WA0031.jpg" alt="Кеңесов Нұржан">
+            <h1>Кеңесов Нұржан</h1>
+            <p class="profile-info">Студент КазНПУ</p>
+        </div>
+        
+        <!-- О себе -->
+        <div id="about" class="about">
+            <h2>Мен жайлы</h2>
+            <p>Мен Кеңесов Нұржан, Казахский Национальный Педагогический Университетінің студентімін. Мен білім беру және педагогика саласында білім алып жатырмын және әрқашан өзімді үздіксіз жетілдіріп отыруға ұмтыламын. Өзімнің оқу жолымда мен білім беру тәсілдерін жетілдіруге, шығармашылық әдіс-тәсілдер арқылы әр түрлі білім беру мәселелерін шешуге басымдық беремін. Білім алу мен үшін тек қана ақпарат жинау емес, сонымен қатар өмір бойы өзін-өзі жетілдіру, қоғамға үлес қосу үшін маңызды жол.
+
+Менің мақсатым — Қазақстанның білім беру саласын дамытуға үлес қосу, жаңа технологияларды енгізу және білім беру тәжірибесін жаңарту арқылы еліміздің болашақ ұрпақтарына сапалы білім беру. Университетте оқып жүріп, мен көптеген жобаларға қатысып, түрлі пәндерде білімімді кеңейттім. Бұл тәжірибелер мені көптеген құнды дағдыларға үйретті, оның ішінде топтық жұмыстарды ұйымдастыру, шығармашылық ойлау және тиімді коммуникация жасау дағдылары бар.
+
+Бос уақытымда мен ғылыми әдебиеттерді оқығанды, инновациялық білім беру әдістерін зерттегенді, және спортпен шұғылдануды ұнатамын. Осылайша, мен білімімді дамыта отырып, денсаулығымды да қолдап отырамын. Мен өзімнің кәсіби және тұлғалық дамуыма көп көңіл бөліп, үздіксіз жетілуге тырысамын. Болашақта еліміздің білім беру жүйесін жаңарту және жетілдіру үшін өз білімім мен дағдыларымды пайдалануды мақсат етемін.</p>
+        </div>
+        
+        <!-- Проекты -->
+        <div id="projects" class="projects">
+    <h2>Білім алу жолы</h2>
+    <div class="project-item">
+        <img src="https://admin.bkogov.kz/sites_files/sh22-uralsk.edu.kz/logo/1669316630_1.png" alt="Проект 1">
+        <div>
+            <h3>
+                <a href="https://sh22-uralsk.edu.kz/kz/about-us" style="color: #3498db; text-decoration: none;">№22 жалпы білім беретін мектебі" КММ</a>
+            </h3>
+            <p>Мен №22 жалпы білім беретін мектепте бастауыш сыныптан 9-сыныпқа дейін оқыдым. Осы мектепте мен сапалы білім алып, дағдыларымды дамытуға мүмкіндік алдым.
+
+Бірінші сыныптан бастап білім әлеміне ендім. Мұғалімдерім мені оқуға ынталандырып, білімге деген сүйіспеншілікті тәрбиелеп, барлық бастамаларымда қолдады. Мен мектептік іс-шараларға, байқауларға және олимпиадаларға белсене қатысып, өзімді сенімді сезініп, коммуникациялық дағдыларымды дамытуға мүмкіндік алдым.
+
+КММ №22 мектебінде білім алу барысында мен көптеген пәндерді оқып, жаңа білімдерге ие болдым. Математика мен әдебиет пәндері маған ерекше ұнады, себебі мен бұл сабақтарда аналитикалық қабілетімді және креативтілігімді көрсете алдым. Әр жаңа ашылым мен шешілген мәселе маған қуаныш сыйлап, алға жылжуға ынталандыратын.
+
+Оқумен қатар, мен спорттық секциялар мен үйірмелерге де белсене қатысып, физикалық дағдыларымды дамытып, жаңа достар табуға мүмкіндік алдым. Осы мектептегі жылдар мен үшін ұмытылмас сәттермен және пайдалы білімдермен толы болды, оларды мен өмірімде пайдаланып жүрмін.</p>
+        </div>
+    </div>
+    <div class="project-item">
+        <img src="https://i.postimg.cc/cCQC9PNW/20241029-165817.jpg" alt="Проект 2">
+        <div>
+            <h3>
+                <a href="https://www.instagram.com/abyroischool_oral?igsh=MWNpZDV5YzBubGdjMg==" style="color: #3498db; text-decoration: none;">ABYROI SCHOOL</a>
+            </h3>
+            <p>Мен 9-11 сыныптарда «Абырой» мектебінде оқыдым. Осы мектепте білім алу мен үшін ерекше маңызды болды, себебі мен ҰБТ-ға дайындалдым.
+
+Мектептің оқу бағдарламасы өте сапалы еді, ал мұғалімдерім өз ісінің шеберлері болды. Олар мені ҰБТ-ға дайындауда үлкен қолдау көрсетті, әр сабағында менің білімімді тереңдетуге мүмкіндік берді. Мен математика, физика және қазақ тілі сияқты пәндерге ерекше көңіл бөлдім, себебі олар сынақта маңызды рөл атқарады.
+
+Мектептегі оқу мен дайындық барысында мен көптеген ресурстарды пайдаландым, қосымша сабақтарға қатысып, тестілік тапсырмаларды шешуге дағдыландым. Досыммен бірге топ болып оқып, бір-бірімізді қолдап, қиындықтарды жеңуге тырыстық.
+
+11 сыныпты аяқтаған соң, ҰБТ-дан жақсы нәтижеге қол жеткізіп, жоғары оқу орнына түсуге мүмкіндік алдым. «Абырой» мектебінде алған білім мен дағдылар менің болашақ жолымда үлкен көмегін тигізді.</p>
+        </div>
+    </div>
+    <div class="project-item">
+        <img src="https://i.postimg.cc/5yngpTPR/20241029-162222.png" alt="Проект 3">
+        <div>
+            <h3>
+                <a href="https://www.kaznpu.kz/ru/" style="color: #3498db; text-decoration: none;">КазНПУ</a>
+            </h3>
+            <p>Мен қазіргі уақытта Қазақ Ұлттық Педагогикалық Университетінде (КазНПУ) 1 курс студентімін. Бұл университетте білім алу мен үшін үлкен мәртебе.
+
+КазНПУ-дің оқу бағдарламасы мен үшін өте қызықты. Мен білім беру және педагогика саласында терең білім алуды мақсат етіп отырмын. Пәндер мені шабыттандырады, ал мұғалімдеріміз өз білімдерімен бөлісіп, бізді ынталандырады.
+
+Университетте оқып жүргенімде, мен әр түрлі іс-шараларға қатысып, достарыммен қарым-қатынас орнатудамын. Студенттік өмірдің әрбір күні мен үшін жаңа тәжірибелермен толы. Мен жоғары оқу орнында алған білімімді болашақта практикада қолдануды және кәсіби деңгейімді арттыруды жоспарлап отырмын.</p>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Иконка Инстаграма -->
+        <div class="social">
+            <a href="https://www.instagram.com/nurlanuly.k.n?igsh=ZWc3NmM4N2g0OWJk&utm_source=qr" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+
+
+    <script>
+        // Добавление класса "visible" при прокрутке
+        const about = document.querySelector('.about');
+        const projects = document.querySelector('.projects');
+
+        window.addEventListener('scroll', () => {
+            if (about.getBoundingClientRect().top < window.innerHeight) {
+                about.classList.add('visible');
+            }
+            if (projects.getBoundingClientRect().top < window.innerHeight) {
+                projects.classList.add('visible');
+            }
+        });
+    </script>
+</body>
+</html>
